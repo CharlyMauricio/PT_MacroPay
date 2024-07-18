@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "549925508283",
+    "project_id": "pruebas-tecnicas-6f8e4",
+    "storage_bucket": "pruebas-tecnicas-6f8e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549925508283:android:a98411a0ecc72bde35459e",
+        "android_client_info": {
+          "package_name": "com.technical.test.macropay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549925508283-3nc3ae3doosvluoja554dan28h4kfn6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAJCbA_BKTpu2rRXKDw9Ou8KGAcb1OVIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549925508283-3nc3ae3doosvluoja554dan28h4kfn6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

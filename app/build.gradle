@@ -1,0 +1,98 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    namespace 'com.technical.test.macropay'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.technical.test.macropay"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        compose true
+        viewBinding true
+        dataBinding true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.1'
+    }
+    packaging {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+dependencies {
+
+    implementation "androidx.appcompat:appcompat:$appCompat"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayout"
+
+    // Jetpack Compose and Kotlin
+    implementation "androidx.core:core-ktx:$kotlinCoreVersion"
+    implementation "androidx.activity:activity-ktx:$activityVersion"
+    implementation "androidx.activity:activity-compose:$activityVersion"
+    implementation "androidx.navigation:navigation-fragment-ktx:$kotlinNavigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$kotlinNavigationVersion"
+    implementation "androidx.compose.ui:ui:$composeUIVersion"
+    implementation "androidx.compose.ui:ui-tooling:$composeUIVersion"
+    implementation "androidx.compose.ui:ui-tooling-preview:$composeUIVersion"
+    implementation "androidx.navigation:navigation-compose:$composeNavigationVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleViewModelVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycleViewModelVersion"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleViewModelVersion"
+
+    // Material
+    implementation "androidx.compose.material:material:$materialVersion"
+    implementation "androidx.compose.material:material-icons-core:$materialVersion"
+    implementation "androidx.compose.material:material-icons-extended:$materialVersion"
+    implementation "com.google.android.material:material:1.12.0"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+
+    // Coil
+    implementation "io.coil-kt:coil:$coilVersion"
+
+    // Firebase platform
+    implementation "com.firebaseui:firebase-ui-auth:7.2.0"
+
+    implementation platform("com.google.firebase:firebase-bom:$firebaseVersion")
+    implementation "com.google.firebase:firebase-analytics"
+    implementation "com.google.firebase:firebase-auth-ktx"
+
+    // test
+    testImplementation  "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test.ext:junit:1.2.1"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.6.1"
+}

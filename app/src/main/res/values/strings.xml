@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MacroPay</string>
+
+    <string name="auth_create_account">Crear cuenta</string>
+    <string name="auth_question_have_account">¿No tienes cuenta?</string>
+    <string name="auth_login">Iniciar Sesion</string>
+    <string name="auth_password">Contraseña</string>
+    <string name="auth_user">Usuario</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="sing_up">Crear cuenta</string>
+
+
+    <string name="score_format">#%d</string>
+    <string name="description">Descripcion</string>
+    <string name="genre">Genero</string>
+    <string name="classification">Clasificacion</string>
+    <string name="date_release">Fecha de Estreno</string>
+    <string name="duration">Duracion</string>
+    <string name="title">Titulo</string>
+    <string name="error_open_detail_movie">Error al abrir el detalle de la pelicula</string>
+
+
+</resources>

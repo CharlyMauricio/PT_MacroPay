@@ -1,0 +1,34 @@
+ext{
+    appCompat = '1.7.0'
+    constraintLayout = '2.1.4'
+
+    // Kotlin and Componse
+    kotlinCoreVersion = '1.13.1'
+    kotlinNavigationVersion = '2.7.7'
+    composeUIVersion = '1.6.8'
+    composeNavigationVersion = '2.7.7'
+    activityVersion = '1.9.0'
+    lifecycleViewModelVersion = '2.8.3'
+
+    // Material Design
+    materialVersion = '1.6.8'
+
+    // Retrofit
+    retrofitVersion = '2.9.0'
+
+    // Coil
+    coilVersion = '2.1.0'
+
+    // Firebase
+    firebaseVersion = '33.1.2'
+
+    // Google
+    gmsAuthApiPhoneVersion = '17.4.0'
+
+    // Testing
+    jUnitVersion = '4.13.2'
+    extJUnitVersion = '1.2.1'
+    espressoCoreVersion = '3.6.1'
+    composeBomVersion = '2023.08.00'
+    mockitoInlineVersion = '3.2.4'
+}
